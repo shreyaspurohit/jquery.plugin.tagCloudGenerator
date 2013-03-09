@@ -6,9 +6,11 @@ This plugin generates a very simple tag cloud based on the weight/strength of th
 Usage
 -----
 Include the script in the head of the HTML page.
+
 	<script type="text/javascript" src="jquery.tagCloudGenerator.js"></script>
 	
 On document ready call the plugin.
+
 	$(container).generateTagCloud(data, options);
 
 'data' can be a string or a json array of object {tagName: <name>, tagUrl: <clickable URL [Optional]>, tagStrength: <Number of tags in your system>}.
@@ -30,6 +32,7 @@ Generally, baseFontSizePerc=perLevelFontDiffPerc*numberOfLevel.
 CSS
 ---
 You can use the '#tagCloudUl', '#tagCloudUl li', '#tagCloudUl label', and '#tagCloudUl a' to style your cloud. A sample CSS is below.
+
 	#tagCloudUl{
 		margin:1em 0;
 		padding:.5em .5em .5em .5em;
